@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Corner</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .welcome-label {
+            letter-spacing: 1.5px;
+        }
+    </style>
+</head>
+
+<body>
+<header class="site-header">
+    <div class="container nav-wrapper">
+        <a href="#home" class="logo" data-page="home">Food<span>Corner</span></a>
+
+        <nav class="navigation" aria-label="Main navigation">
+            <a href="#home" data-page="home" class="active">Home</a>
+            <a href="#menu" data-page="menu">Menu</a>
+            <a href="#about" data-page="about">About</a>
+            <a href="#contact" data-page="contact">Contact</a>
+        </nav>
+
+        <a href="#menu" data-page="menu" class="nav-cta">View Menu</a>
+    </div>
+</header>
+
+<main>
+    <!-- WELCOME PAGE: only the required Welcome Section -->
+    <section id="home" class="page active-page">
+        <div class="hero">
+            <div class="container hero-content">
+                <span class="welcome-label">Welcome to Food Corner</span>
+                <h1>Good Food.<br><span>Good Mood.</span></h1>
+                <p>Fresh ingredients, bold flavors and delicious comfort food made with care for every happy moment.</p>
+
+                <!-- Inline CSS -->
+                <a href="#menu" data-page="menu" class="primary-btn" style="letter-spacing:.5px;">
+                    Explore Menu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU PAGE -->
+    <section id="menu" class="page">
+        <div class="page-hero">
+            <div class="container">
+                <span class="eyebrow">Food Corner</span>
+                <h1>Our Menu</h1>
+                <p>Classic favorites prepared fresh with delicious ingredients and plenty of flavor.</p>
+            </div>
+        </div>
+
+        <div class="section menu-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Customer Favorites</span>
+                    <h2>Choose Your Favorite</h2>
+                    <p>Four delicious options, made fresh and ready to make your day better.</p>
+                </div>
+
+                <div class="food-grid">
+                    <article class="food-card">
+                        <div class="food-image pizza-image"></div>
+                        <div class="food-info">
+                            <span class="food-tag">Popular</span>
+                            <h3>Classic Pizza</h3>
+                            <p>Cheesy, crispy and loaded with fresh toppings for the perfect bite.</p>
+                            <div class="food-bottom"><strong>Rs. 799</strong><a href="#contact" data-page="contact" class="order-btn">Order Now</a></div>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <div class="food-image burger-image"></div>
+                        <div class="food-info">
+                            <span class="food-tag">Chef's Pick</span>
+                            <h3>Juicy Burger</h3>
+                            <p>A flavorful grilled patty layered with fresh vegetables and signature sauce.</p>
+                            <div class="food-bottom"><strong>Rs. 599</strong><a href="#contact" data-page="contact" class="order-btn">Order Now</a></div>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <div class="food-image sandwich-image"></div>
+                        <div class="food-info">
+                            <span class="food-tag">Fresh</span>
+                            <h3>Club Sandwich</h3>
+                            <p>Golden toasted bread with fresh filling, crisp vegetables and creamy sauce.</p>
+                            <div class="food-bottom"><strong>Rs. 449</strong><a href="#contact" data-page="contact" class="order-btn">Order Now</a></div>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <div class="food-image pasta-image"></div>
+                        <div class="food-info">
+                            <span class="food-tag">Favorite</span>
+                            <h3>Creamy Pasta</h3>
+                            <p>Rich, creamy pasta tossed with herbs and deliciously seasoned ingredients.</p>
+                            <div class="food-bottom"><strong>Rs. 649</strong><a href="#contact" data-page="contact" class="order-btn">Order Now</a></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT PAGE -->
+    <section id="about" class="page">
+        <div class="page-hero">
+            <div class="container">
+                <span class="eyebrow">Our Story</span>
+                <h1>About Food Corner</h1>
+                <p>A warm neighborhood food spot built around simple food, fresh ingredients and big flavor.</p>
+            </div>
+        </div>
+
+        <div class="section about-section">
+            <div class="container about-layout">
+                <div class="about-visual">
+                    <div class="about-card">
+                        <span>Since</span>
+                        <strong>2026</strong>
+                        <small>Serving happiness</small>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="eyebrow">Who We Are</span>
+                    <h2>Simple Food. Big Flavor.</h2>
+                    <p>Food Corner is a fictional neighborhood restaurant created to bring together classic favorites and a warm dining experience. Our menu focuses on familiar food, fresh ingredients and flavors that make every visit memorable.</p>
+
+                    <div class="about-points">
+                        <div><span>✓</span> Fresh ingredients</div>
+                        <div><span>✓</span> Friendly service</div>
+                        <div><span>✓</span> Made to order</div>
+                        <div><span>✓</span> Family friendly</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT PAGE -->
+    <section id="contact" class="page">
+        <div class="page-hero">
+            <div class="container">
+                <span class="eyebrow">We'd Love To Hear From You</span>
+                <h1>Contact Us</h1>
+                <p>Questions, suggestions or ready to order? Send us a message.</p>
+            </div>
+        </div>
+
+        <div class="section contact-section">
+            <div class="container contact-layout">
+                <div class="contact-info">
+                    <span class="eyebrow">Get In Touch</span>
+                    <h2>Hungry? Let's Talk.</h2>
+                    <p>Have a question, suggestion or want to place an order? Send us a message and our team will get back to you.</p>
+
+                    <div class="contact-detail">
+                        <span>📍</span>
+                        <div><strong>Location</strong><p>Food Street, Islamabad</p></div>
+                    </div>
+                    <div class="contact-detail">
+                        <span>☎</span>
+                        <div><strong>Phone</strong><p>+92 300 1234567</p></div>
+                    </div>
+                    <div class="contact-detail">
+                        <span>✉</span>
+                        <div><strong>Email</strong><p>hello@foodcorner.example</p></div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <a href="#home" data-page="home" class="logo">Food<span>Corner</span></a>
+        <p>© 2026 Food Corner</p>
+        <div class="footer-links">
+            <a href="#home" data-page="home">Home</a>
+            <a href="#menu" data-page="menu">Menu</a>
+            <a href="#about" data-page="about">About</a>
+            <a href="#contact" data-page="contact">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const pages = document.querySelectorAll(".page");
+    const navLinks = document.querySelectorAll("[data-page]");
+
+    function showPage(pageName, updateUrl = true) {
+        const validPage = document.getElementById(pageName) ? pageName : "home";
+
+        pages.forEach(page => {
+            page.classList.toggle("active-page", page.id === validPage);
+        });
+
+        document.querySelectorAll(".navigation a[data-page]").forEach(link => {
+            link.classList.toggle("active", link.dataset.page === validPage);
+        });
+
+        if (updateUrl) {
+            history.pushState({ page: validPage }, "", "#" + validPage);
+        }
+
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            showPage(this.dataset.page);
+        });
+    });
+
+    window.addEventListener("popstate", () => {
+        showPage(location.hash.replace("#", "") || "home", false);
+    });
+
+    showPage(location.hash.replace("#", "") || "home", false);
+</script>
+</body>
+</html>

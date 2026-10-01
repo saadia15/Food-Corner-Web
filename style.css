@@ -1,0 +1,123 @@
+
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:"Segoe UI",Arial,sans-serif;color:#263238;background:#fffaf5}
+body{line-height:1.6}
+h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif}
+a{text-decoration:none;color:inherit}
+button,input,textarea{font:inherit}
+.container{width:min(1120px,92%);margin:auto}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:100;background:rgba(255,250,245,.97);border-bottom:1px solid #eadfd5;backdrop-filter:blur(10px)}
+.nav-wrapper{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.logo{font-size:1.65rem;font-weight:800}
+.logo span{color:#e4772f}
+.navigation{display:flex;align-items:center;gap:30px}
+.navigation a{display:inline-block;position:relative;padding:8px 0;color:#455a64;font-size:.92rem;font-weight:700;cursor:pointer}
+.navigation a:hover,.navigation a.active{color:#e4772f}
+.navigation a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:#e4772f;transition:.2s}
+.navigation a:hover::after,.navigation a.active::after{width:100%}
+.nav-cta,.primary-btn,.order-btn,.submit-btn{display:inline-block;border:0;border-radius:10px;font-weight:800;cursor:pointer;transition:.2s}
+.nav-cta{padding:11px 18px;background:#263238;color:#fff}
+.nav-cta:hover{background:#e4772f;transform:translateY(-2px)}
+
+/* SPA page system: one index.html, separate visible pages */
+.page{display:none;min-height:calc(100vh - 76px)}
+.page.active-page{display:block}
+
+/* Welcome */
+.hero{min-height:calc(100vh - 76px);display:flex;align-items:center;background-color:#71361e;background-image:linear-gradient(90deg,rgba(25,20,18,.82),rgba(25,20,18,.25)),url("https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1800&q=85");background-repeat:no-repeat;background-position:center;background-size:cover}
+.hero-content{max-width:720px;color:#fff}
+.welcome-label{display:inline-block;margin-bottom:18px;padding:7px 14px;border:1px solid rgba(255,255,255,.35);border-radius:999px;color:#fff;font-size:.78rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+.hero h1{margin:0 0 20px;font-size:clamp(3.6rem,7vw,6.6rem);line-height:.95;letter-spacing:-4px}
+.hero h1 span{color:#ffb04a}
+.hero p{max-width:570px;margin-bottom:32px;color:rgba(255,255,255,.86);font-size:1.1rem}
+.primary-btn{padding:14px 24px;background:#e4772f;color:#fff;box-shadow:0 10px 25px rgba(228,119,47,.3)}
+.primary-btn:hover{background:#c96120;transform:translateY(-3px)}
+
+/* Inner pages */
+.page-hero{padding:85px 0;background:#263238;color:#fff}
+.eyebrow{display:inline-block;margin-bottom:10px;color:#e4772f;font-size:.76rem;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+.page-hero h1{margin:0 0 10px;font-size:clamp(2.8rem,5vw,4.7rem);line-height:1}
+.page-hero p{max-width:620px;margin:0;color:rgba(255,255,255,.72)}
+.section{padding:90px 0}
+
+/* Menu */
+.section-heading{max-width:700px;margin:0 auto 48px;text-align:center}
+.section-heading h2,.about-content h2,.contact-info h2{margin-bottom:14px;color:#263238;font-size:clamp(2rem,4vw,3.2rem);line-height:1.1}
+.section-heading p,.about-content>p,.contact-info>p{color:#607d8b}
+.menu-section{background:#fffaf5}
+.food-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.food-card{width:100%;min-height:470px;overflow:hidden;border:1px solid #eadfd5;border-radius:18px;background:#fff;box-shadow:0 12px 35px rgba(44,62,80,.08);transition:.25s}
+.food-card:hover{transform:translateY(-6px);box-shadow:0 20px 45px rgba(44,62,80,.14)}
+.food-card:first-child{border-color:#e4772f}
+.food-image{height:250px;background-repeat:no-repeat;background-position:center;background-size:cover;background-color:#eee}
+.pizza-image{background-image:url("https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1000&q=85")}
+.burger-image{background-image:url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=85")}
+.sandwich-image{background-image:url("https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1000&q=85")}
+.pasta-image{background-image:url("https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1000&q=85")}
+.food-info{padding:25px}
+.food-tag{display:inline-block;margin-bottom:10px;padding:4px 9px;border-radius:999px;background:#fff0e3;color:#c45d1c;font-size:.7rem;font-weight:900;text-transform:uppercase}
+.food-card h3{margin:0 0 8px;font-size:1.55rem}
+.food-card p{min-height:70px;color:#78909c}
+.food-bottom{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:18px}
+.order-btn{padding:10px 15px;background:#263238;color:#fff;font-size:.82rem}
+.order-btn:hover{background:#e4772f;transform:translateY(-2px)}
+
+/* About */
+.about-section,.contact-section{background:#f4eee7}
+.about-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:75px;align-items:center}
+.about-visual{min-height:500px;padding:30px;display:flex;align-items:flex-end;justify-content:flex-end;border-radius:24px;background:linear-gradient(135deg,rgba(228,119,47,.12),rgba(38,50,56,.38)),url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1000&q=85");background-position:center;background-size:cover}
+.about-card{width:190px;padding:25px;border-radius:18px;background:rgba(255,255,255,.92);text-align:center;box-shadow:0 18px 40px rgba(0,0,0,.16)}
+.about-card span,.about-card small{display:block;color:#607d8b}
+.about-card strong{display:block;color:#e4772f;font:800 3rem Georgia,serif}
+.about-points{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+.about-points div{padding:13px 15px;border-radius:10px;background:#fff;color:#455a64;font-weight:700}
+.about-points span{color:#e4772f;margin-right:7px}
+
+/* Contact */
+.contact-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
+.contact-detail{display:flex;gap:14px;margin-top:24px}
+.contact-detail>span{width:42px;height:42px;display:grid;place-items:center;border-radius:10px;background:#fff}
+.contact-detail p{margin:0;color:#78909c}
+.contact-form{padding:34px;border:1px solid #eadfd5;border-radius:18px;background:#fff;box-shadow:0 15px 40px rgba(44,62,80,.08)}
+.contact-form label{display:block;margin-bottom:7px;font-size:.86rem;font-weight:800}
+.contact-form input,.contact-form textarea{width:100%;margin-bottom:20px;padding:13px 15px;border:1px solid #d9d0c8;border-radius:9px;outline:none;background:#fffaf5}
+.contact-form textarea{min-height:140px;resize:vertical}
+input[type="email"]{border-left:3px solid #e4772f}
+.contact-form input:focus,.contact-form textarea:focus{border-color:#e4772f;box-shadow:0 0 0 3px rgba(228,119,47,.1)}
+.submit-btn{width:100%;padding:14px 20px;background:#e4772f;color:#fff}
+.submit-btn:hover{background:#c96120;transform:translateY(-2px)}
+
+/* Footer */
+.site-footer{padding:30px 0;background:#1d292e;color:rgba(255,255,255,.72)}
+.footer-content{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.footer-content .logo{color:#fff}
+.footer-content p{margin:0;font-size:.85rem}
+.footer-links{display:flex;gap:20px}
+.footer-links a{font-size:.82rem;cursor:pointer}
+.footer-links a:hover{color:#ffb04a}
+
+/* Lab requirements applied in the stylesheet, without displaying a demo section */
+h1,h2,h3,p{line-height:1.6}
+#specificity-demo{color:#1976d2}.specificity-demo{color:#e4772f}
+.cascade-demo{color:#c0392b}.cascade-demo{color:#2e7d32}
+.margin-collapse-one{margin-bottom:40px}.margin-collapse-two{margin-top:30px}
+.constraint-demo{width:80%;height:200px;min-width:300px;max-width:800px;min-height:150px;max-height:250px}
+.overflow-visible{overflow:visible}.overflow-hidden{overflow:hidden}.overflow-scroll{overflow:scroll}
+.display-block{display:block}.display-inline{display:inline}.display-inline-block{display:inline-block}.display-none{display:none}
+
+/* Responsive */
+@media(max-width:850px){
+ .navigation{gap:16px}.nav-cta{display:none}
+ .food-grid,.about-layout,.contact-layout{grid-template-columns:1fr}
+ .about-visual{min-height:380px}
+}
+@media(max-width:600px){
+ .navigation{display:none}.nav-wrapper{min-height:68px}
+ .hero{min-height:calc(100vh - 68px)}
+ .hero h1{font-size:3.5rem;letter-spacing:-2px}
+ .section{padding:65px 0}
+ .about-points{grid-template-columns:1fr}
+ .footer-content{flex-direction:column;text-align:center}
+}
