@@ -8,44 +8,76 @@ The project demonstrates the use of HTML, CSS, and basic JavaScript navigation w
 
 # Features
 . Professional restaurant-style design
+
 . Responsive layout for different screen sizes
+
 . Welcome section with heading, description, and Explore Menu button
+
 . Food menu with Pizza, Burger, Sandwich, and Pasta
+
 . About section describing Food Corner
+
 . Contact section with contact information and a message form
+
 . Navigation between Home, Menu, About, and Contact
+
 . Hover effects and smooth transitions
+
 . Attractive color combination and typography
+
 . Responsive navigation and layout
-. Footer with © 2026 Food Corner
-. Technologies Used
+
+
+# Technologies Used
 . HTML5 – Website structure and content
+
 . CSS3 – Styling, layout, responsiveness, effects, and CSS concepts
+
 . JavaScript – Page/view navigation within index.html
+
 . CSS Concepts Applied
+
 . This project applies several CSS concepts required for the lab, including:
+
 . CSS selectors
+
 . Grouping selectors
+
 . Inheritance
+
 . Specificity
+
 . Cascade
+
 . Inline CSS
+
 . Internal CSS
+
 . External CSS
+
 . Box model
+
 . Margin and padding
+
 . Margin collapsing
+
 . Width and height
+
 . Minimum and maximum constraints
+
 . Overflow
+
 . Display properties
+
 . Pseudo-elements
+
 . Hover effects
+
 . Responsive design
+
 . Borders, shadows, spacing, and typography
 
 # Project Structure
-FoodCorner/
 1.	index.html
 2.	style.css
 3.	images
